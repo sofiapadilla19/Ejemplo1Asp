@@ -1,0 +1,39 @@
+﻿@model Ejemplo1Asp.Services.Calculos
+
+@{
+    ViewBag.Title = "Sumar";
+}
+
+<h2>Sumar</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form action="/" method="post">
+                <label for="Numero1">Numero 1</label>
+                <input type="text" name="Numero1" value="" />
+                <!--Tiene que ir el for y el name tienen que ir de acuerdo a la variable a la que nos referimos-->
+                <br />
+                <label for="Numero2">Numero 2</label>
+                <input type="text" name="Numero2" value="" />
+                <br />
+                <p>Selecciona la operación</p>
+                <label for="r1">Suma: </label>
+                <input type="radio" name="r1" id="r1" value="suma" required />
+                <label for="r1">Resta: </label>
+                <input type="radio" name="r1" id="r1" value="resta" required />
+
+                @*METODO DE BERNA PARA ESOGER SI SUMA O RESTA*@
+                @*<p >Sumar:</p>
+        <input type="radio" name="r1" value="sumar" required/>
+        <p >Restar:</p>
+        <input type="radio" name="r1" value="restar" required/>*@
+                <br />
+                <input type="submit" value="Calcular" />
+            </form>
+        </div>
+        <div class="col-lg-6">
+            <h1>El resultado es: @ViewBag.res</h1>
+        </div>
+    </div>
+</div>

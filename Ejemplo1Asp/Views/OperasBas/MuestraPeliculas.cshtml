@@ -1,0 +1,37 @@
+﻿@model List<Ejemplo1Asp.Models.Peliculas>
+@{
+    ViewBag.Title = "MuestraPeliculas";
+}
+
+
+<html>
+<head>
+    <title>MuestraPeliculas</title>
+</head>
+<body>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <th>Titulo</th>
+                <th>Duracion</th>
+                <th>Pais</th>
+                <th>Publicacion</th>
+            </thead>
+                <tbody>
+                    <!--Para recorrer la lista (es lo de abajo)-->
+                    @foreach (var pelicula in Model)
+                    {
+                    <tr>
+                        <!--Para hacer referencia a la variable pelicula-->
+                        <td>@pelicula.Titulo</td>
+                        <td>@pelicula.Duracion</td>
+                        <td>@pelicula.Pais</td>
+                        <td>@pelicula.Publicacion.ToString("dd/MM/yyyy")</td>
+                    </tr>
+                    }
+                </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
