@@ -1,0 +1,30 @@
+﻿@model Ejemplo1Asp.Models.Persona
+
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+
+@*esto es como crear un formulario*@
+@using (Html.BeginForm())
+{
+    <div>
+        @*aqui aparece solo el titulo del campo*@
+        @Html.LabelFor(Model => Model.Nombre)
+        @*el campo aqui aparece*@
+        @Html.EditorFor(Model => Model.Nombre)
+    </div>
+    <div>
+        @Html.LabelFor(Model => Model.Edad)
+        @Html.EditorFor(Model => Model.Edad)
+    </div>
+    <div>
+        <input type="submit" value="Enviar"/>
+    </div>
+}
+
+@*aqui se colocan los valores*@
+<h2>Nombre: @ViewBag.Nom</h2>
+<h1>Edad: @ViewBag.Edad</h1>
+

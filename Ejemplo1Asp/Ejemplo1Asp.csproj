@@ -181,6 +181,11 @@
     <Content Include="Views\OperasBas\Sumar.cshtml" />
     <Content Include="Views\OperasBas\vista.cshtml" />
     <Content Include="Views\Practicas\Index.cshtml" />
+    <Content Include="Views\Practicas\DisplayTemplates\Boolean.cshtml" />
+    <Content Include="Views\Practicas\DisplayTemplates\DateTime.cshtml" />
+    <Content Include="Views\Practicas\EditorTemplates\DateTime.cshtml" />
+    <Content Include="Views\Practicas\Index2.cshtml" />
+    <Content Include="Views\Practicas\Index3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

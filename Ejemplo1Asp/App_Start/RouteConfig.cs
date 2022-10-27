@@ -21,7 +21,7 @@ namespace Ejemplo1Asp
                 //en este caso esta es la primera vista que va a mostrar
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "OperasBas", action = "Sumar", id = UrlParameter.Optional }
+                defaults: new { controller = "Practicas", action = "Index2", id = UrlParameter.Optional }
             );
         }
     }

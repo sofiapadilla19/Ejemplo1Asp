@@ -16,12 +16,26 @@ namespace Ejemplo1Asp.Controllers
             {
                 Nombre = "Iza",
                 Edad = 20,
-                Empleado = true,
+                Empleado = false,
                 Nacimiento = new DateTime(2001, 5, 4)
             };
             ViewBag.Propiedad = persona;
 
             return View();
+        }
+
+        public ActionResult Index2(Persona persona)
+        {
+            ViewBag.Nom = persona.Nombre;
+            ViewBag.Edad = persona.Edad;
+            return View(persona);
+        }
+
+        public ActionResult Index3(Persona persona)
+        {
+            ViewBag.Nom = persona.Nombre;
+            ViewBag.Edad = persona.Edad;
+            return View(persona);
         }
     }
 }
